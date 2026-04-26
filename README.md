@@ -18,3 +18,25 @@ Ensure you have the following installed on your local machine:
    ```bash
    git clone [https://github.com/noeljais/python-todo-docker.git](https://github.com/noeljais/python-todo-docker.git)
    cd python-todo-docker
+Build and launch the container:
+
+Bash
+docker compose up --build
+Access the application:
+Open your web browser and navigate to http://localhost:5000.
+
+📁 Project Structure
+app.py: The core Flask routing and application logic.
+
+Dockerfile: The blueprint for the Python 3.10 slim container image.
+
+docker-compose.yml: The configuration to map ports and manage the container service.
+
+requirements.txt: The required Python dependencies (Flask).
+
+🔒 Future Enhancements
+Deploy the containerized application to cloud infrastructure (AWS EC2 or Azure VNet).
+
+Implement container vulnerability scanning using tools like Trivy.
+
+Perform routine service detection and security hardening against the server environment.
